@@ -5,60 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MBTI</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <form id="form">
+    <h1>Pseudo MBTI</h1>
+
+    <form id="form" class="form">
       <!-- kategori 1 -->
-      <label for=""
-        >Anda merasa kesulitan memperkenalkan diri ke orang lain.</label
-      ><br />
-      saya setuju<input
-        type="radio"
-        name="category1"
-        onclick="MBTI.choose_E_or_1()"
-      />
-      <input type="radio" name="category1" onclick="MBTI.choose_E_or_1()" />saya
-      tidak setuju<br />
+      <div class="labels">
+        <label for="">I find difficult to introduce yourself to others.</label>
+      </div>
+      <div>
+        Agree
+        <input type="radio" name="category1" onclick="MBTI.choose_E_or_I()" />
+        <input
+          type="radio"
+          name="category1"
+          onclick="MBTI.choose_E_or_I()"
+        />Disagree
+      </div>
 
       <!-- kategori 2 -->
-      <label for=""
-        >Anda sering tenggelam dalam pikiran sehingga Anda mengabaikan atau
-        melupakan sekeliling Anda.</label
-      ><br />
-      saya setuju<input
-        type="radio"
-        name="category2"
-        onclick="MBTI.choose_S_or_I()"
-      />
-      <input type="radio" name="category2" onclick="MBTI.choose_S_or_I()" />saya
-      tidak setuju<br />
+      <div class="labels">
+        <label for=""
+          >I often busy with your own mind and make you tend to ignore or forget
+          about your surroundings</label
+        >
+      </div>
+      <div>
+        Agree<input
+          type="radio"
+          name="category2"
+          onclick="MBTI.choose_S_or_I()"
+        />
+        <input
+          type="radio"
+          name="category2"
+          onclick="MBTI.choose_S_or_I()"
+        />Disagree
+      </div>
 
       <!-- kategori 3 -->
-      <label for=""
-        >Anda mencoba menjawab email Anda sesegera mungkin dan tidak tahan
-        melihat kotak masuk yang berantakan.</label
-      ><br />
-      saya setuju<input
-        type="radio"
-        name="category3"
-        onclick="MBTI.choose_T_or_F()"
-      />
-      <input type="radio" name="category3" onclick="MBTI.choose_T_or_F()" />saya
-      tidak setuju<br />
+      <div class="labels">
+        <label for=""
+          >I prefer to make logical judgments than value judgments</label
+        >
+      </div>
+      <div>
+        Agree<input
+          type="radio"
+          name="category3"
+          onclick="MBTI.choose_T_or_F()"
+        />
+        <input
+          type="radio"
+          name="category3"
+          onclick="MBTI.choose_T_or_F()"
+        />Disagree
+      </div>
 
       <!-- kategori 4 -->
-      <label for=""
-        >Anda merasa mudah untuk tetap santai dan fokus bahkan saat berada dalam
-        tekanan.</label
-      ><br />
-      saya setuju<input
-        type="radio"
-        name="category4"
-        onclick="MBTI.choose_J_or_P()"
-      />
-      <input type="radio" name="category4" onclick="MBTI.choose_J_or_P()" />saya
-      tidak setuju<br />
-      <button onclick="MBTI.resultMBTI()">add</button>
+      <div class="labels">
+        <label for="">I always plan specifically what I will do tomorrow</label>
+      </div>
+      <div>
+        Agree<input
+          type="radio"
+          name="category4"
+          onclick="MBTI.choose_J_or_P()"
+        />
+        <input
+          type="radio"
+          name="category4"
+          onclick="MBTI.choose_J_or_P()"
+        />Disagree
+      </div>
+
+      <button onclick="MBTI.resultMBTI()">Submit</button>
     </form>
 
     <script src="index.js"></script>
