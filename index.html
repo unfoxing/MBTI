@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MBTI</title>
+  </head>
+  <body>
+    <form id="form">
+      <!-- kategori 1 -->
+      <label for=""
+        >Anda merasa kesulitan memperkenalkan diri ke orang lain.</label
+      ><br />
+      saya setuju<input
+        type="radio"
+        name="category1"
+        onclick="MBTI.choose_E_or_1()"
+      />
+      <input type="radio" name="category1" onclick="MBTI.choose_E_or_1()" />saya
+      tidak setuju<br />
+
+      <!-- kategori 2 -->
+      <label for=""
+        >Anda sering tenggelam dalam pikiran sehingga Anda mengabaikan atau
+        melupakan sekeliling Anda.</label
+      ><br />
+      saya setuju<input
+        type="radio"
+        name="category2"
+        onclick="MBTI.choose_S_or_I()"
+      />
+      <input type="radio" name="category2" onclick="MBTI.choose_S_or_I()" />saya
+      tidak setuju<br />
+
+      <!-- kategori 3 -->
+      <label for=""
+        >Anda mencoba menjawab email Anda sesegera mungkin dan tidak tahan
+        melihat kotak masuk yang berantakan.</label
+      ><br />
+      saya setuju<input
+        type="radio"
+        name="category3"
+        onclick="MBTI.choose_T_or_F()"
+      />
+      <input type="radio" name="category3" onclick="MBTI.choose_T_or_F()" />saya
+      tidak setuju<br />
+
+      <!-- kategori 4 -->
+      <label for=""
+        >Anda merasa mudah untuk tetap santai dan fokus bahkan saat berada dalam
+        tekanan.</label
+      ><br />
+      saya setuju<input
+        type="radio"
+        name="category4"
+        onclick="MBTI.choose_J_or_P()"
+      />
+      <input type="radio" name="category4" onclick="MBTI.choose_J_or_P()" />saya
+      tidak setuju<br />
+      <button onclick="MBTI.resultMBTI()">add</button>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
