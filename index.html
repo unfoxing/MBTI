@@ -10,78 +10,12 @@
   <body>
     <h1>Pseudo MBTI</h1>
 
-    <form id="form" class="form">
-      <!-- kategori 1 -->
-      <div class="labels">
-        <label for="">I find difficult to introduce myself to others.</label>
-      </div>
-      <div>
-        Agree
-        <input type="radio" name="category1" onclick="MBTI.choose_E_or_I()" />
-        <input
-          type="radio"
-          name="category1"
-          onclick="MBTI.choose_E_or_I()"
-        />Disagree
+    <form id="form" class="form" onsubmit="MBTI.resultMBTI()">
+      <div id="questions" class="questions">
+        <!-- QUESTIONS -->
       </div>
 
-      <!-- kategori 2 -->
-      <div class="labels">
-        <label for=""
-          >I often busy with your own mind and make you tend to ignore or forget
-          about your surroundings</label
-        >
-      </div>
-      <div>
-        Agree<input
-          type="radio"
-          name="category2"
-          onclick="MBTI.choose_S_or_N()"
-        />
-        <input
-          type="radio"
-          name="category2"
-          onclick="MBTI.choose_S_or_N()"
-        />Disagree
-      </div>
-
-      <!-- kategori 3 -->
-      <div class="labels">
-        <label for=""
-          >I prefer to make logical judgments than value judgments</label
-        >
-      </div>
-      <div>
-        Agree<input
-          type="radio"
-          name="category3"
-          onclick="MBTI.choose_T_or_F()"
-        />
-        <input
-          type="radio"
-          name="category3"
-          onclick="MBTI.choose_T_or_F()"
-        />Disagree
-      </div>
-
-      <!-- kategori 4 -->
-      <div class="labels">
-        <label for="">I always plan specifically what I will do tomorrow</label>
-      </div>
-      <div>
-        Agree<input
-          type="radio"
-          name="category4"
-          onclick="MBTI.choose_J_or_P()"
-        />
-        <input
-          type="radio"
-          name="category4"
-          onclick="MBTI.choose_J_or_P()"
-        />Disagree
-      </div>
-
-      <button onclick="MBTI.resultMBTI()">Submit</button>
+      <input type="submit" value="Submit" />
     </form>
 
     <script src="index.js"></script>

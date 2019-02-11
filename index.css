@@ -19,6 +19,10 @@ h1 {
   width: 700px;
 }
 
+.questions {
+  text-align: center;
+}
+
 .labels {
   margin-top: 10px;
 }
